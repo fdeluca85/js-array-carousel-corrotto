@@ -46,10 +46,14 @@ body{
 
 .foto-thumb{
     height: 100px;
-    width: 200px;
+    width: 100%;
     display: flex;
     align-content:center;
     /* background: dodgerblue;
     border: 1px solid black; */
-    object-fit: cover;
+    /* object-fit: cover; */
+}
+
+.foto-thumb img{
+    width: 100%;
 }
