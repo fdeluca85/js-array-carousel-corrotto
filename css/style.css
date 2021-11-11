@@ -29,7 +29,7 @@ body{
 
 .box{
     height: 500px;
-    width: 700px;
+    width: 900px;
     display: flex;
     background-color: darkgoldenrod;
     border: 1px solid black;
@@ -49,6 +49,7 @@ body{
     width: 200px;
     display: flex;
     align-content:center;
-    background: dodgerblue;
-    border: 1px solid black;
+    /* background: dodgerblue;
+    border: 1px solid black; */
+    object-fit: cover;
 }
