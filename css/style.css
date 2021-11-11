@@ -30,25 +30,33 @@ body{
 /* contenitore dell'immagine principale e della colonna thumbnail */
 .box{
     height: 500px;
-    width: 1000px;
+    /* width: 1000px; */
     display: flex;
     background-color: darkgoldenrod;
     /* border: 1px solid black; */
-    position: relative;
+    
 }
 
 /* immagine principale */
-.colonna-foto{
+.foto{
     height: 500px;
-    width: calc(100% - 200px);
-    display: flex;
+    width: 100%;
+    display: flex;    
+    display:none;
+
+}
+.foto img{
+    height: 100%;
+    width: 1000px;
+    /* width: calc(100% - 200px); */
+    object-fit: cover;
 }
 /* visibilità immagine principale */
-.nascosta{
+/* .nascosta{
     display:none
-}
-.visibile{
-    display: inline-block;
+} */
+.active{
+    display: block;
 }
 
 
@@ -62,6 +70,7 @@ body{
     flex-direction:column;
     align-items:center;
     justify-content:center;  
+    position: relative;
 }
 .foto-thumb{
     height: 100px;
@@ -74,6 +83,7 @@ body{
 }
 .foto-thumb img{
     width: 100%;
+    object-fit: cover;
 }
 
 
@@ -101,7 +111,7 @@ body{
 .txt{
     position: absolute;
     bottom: 40px;
-    width: calc(100% - 200px);
+    width: calc(100% - 220px);
     margin: 20px;
     display: flex;
     align-content:center;
