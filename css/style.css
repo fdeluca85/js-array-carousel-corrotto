@@ -17,7 +17,7 @@ body{
 }
 
 .container{
-    background-color: aqua;
+    /* background-color: aqua; */
     margin: 0 auto;
     /* width: 80%; */
     height: 100vh;
@@ -29,19 +29,28 @@ body{
 
 .box{
     height: 500px;
-    width: 900px;
+    width: 1000px;
     display: flex;
     background-color: darkgoldenrod;
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    position: relative;
 }
 
 .colonna-foto{
     height: 500px;
+    width: calc(100% - 200px);
+    display: flex;
+}
+
+.colonna-thumb{
+    height: 500px;
     width: 200px;
     display: flex;
     background-color: darkgreen;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     flex-direction:column;
+    align-items:center;
+    justify-content:center;  
 }
 
 .foto-thumb{
@@ -53,7 +62,36 @@ body{
     border: 1px solid black; */
     /* object-fit: cover; */
 }
-
 .foto-thumb img{
     width: 100%;
+}
+
+.pulsante{
+    background-color: rgba(255, 255, 255, 0.384);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    color: black;
+}
+.up{
+    position: absolute;
+    top: 10px;    
+    display: flex;
+    align-content:start;   
+}
+.down{    
+    position: absolute;
+    bottom:10px;
+    display: flex;
+    align-content:end;    
+}
+
+.txt{
+    position: absolute;
+    bottom: 40px;
+    width: calc(100% - 200px);
+    margin: 20px;
+    display: flex;
+    align-content:center;
+
 }
