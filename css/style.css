@@ -27,6 +27,7 @@ body{
     justify-content: center;
 }
 
+/* contenitore dell'immagine principale e della colonna thumbnail */
 .box{
     height: 500px;
     width: 1000px;
@@ -36,12 +37,22 @@ body{
     position: relative;
 }
 
+/* immagine principale */
 .colonna-foto{
     height: 500px;
     width: calc(100% - 200px);
     display: flex;
 }
+/* visibilità immagine principale */
+.nascosta{
+    display:none
+}
+.visibile{
+    display: inline-block;
+}
 
+
+/* immagini thumbnail */
 .colonna-thumb{
     height: 500px;
     width: 200px;
@@ -52,7 +63,6 @@ body{
     align-items:center;
     justify-content:center;  
 }
-
 .foto-thumb{
     height: 100px;
     width: 100%;
@@ -66,6 +76,8 @@ body{
     width: 100%;
 }
 
+
+/* pulsante per scorrere immagini */
 .pulsante{
     background-color: rgba(255, 255, 255, 0.384);
     height: 40px;
